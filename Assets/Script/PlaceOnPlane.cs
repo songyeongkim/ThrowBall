@@ -55,6 +55,12 @@ public class PlaceOnPlane : MonoBehaviour
             return true;
         }
 
+        if(Input.GetMouseButtonDown(0) && Application.isEditor)
+        {
+            touchPosition = visualObject.transform.position;
+            return true;
+        }
+
         touchPosition = default;
         return false;
     }
@@ -70,16 +76,20 @@ public class PlaceOnPlane : MonoBehaviour
             // will be the closest hit.
             var hitPose = s_Hits[0].pose;
 
-            if (spawnedObject == null)
+            if (spawnedObject == null && !Application.isEditor)
             {
                 spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
                 GameManager.Instance.SetBall();
 
             }
-            else
-            {
+            placementUpdate.Invoke();
+        }
 
-            }
+        if (spawnedObject == null && Application.isEditor && Input.GetMouseButtonDown(0))
+        {
+            Debug.Log(touchPosition);
+            spawnedObject = Instantiate(m_PlacedPrefab, visualObject.transform.position, m_PlacedPrefab.transform.rotation);
+            GameManager.Instance.SetBall();
             placementUpdate.Invoke();
         }
     }

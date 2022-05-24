@@ -469,6 +469,8 @@ struct OrdinalIgnoreCaseComparer_t8BAE11990A4C855D3BCBBFB42F4EF8D45088FBB0;
 struct PathTooLongException_tAF7644094546C2BD93B829405B0199BF3B3FC2E5;
 // System.IO.PinnedBufferMemoryStream
 struct PinnedBufferMemoryStream_t8E711E8F32195672BA8621BCE2FD9FF66D3CEACC;
+// System.Random
+struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8;
 // System.Runtime.InteropServices.SafeBuffer
 struct SafeBuffer_t75FD9565BE645665AB242CA8C8BB22E1A933DFCE;
 // Microsoft.Win32.SafeHandles.SafeFileHandle
@@ -617,6 +619,7 @@ IL2CPP_EXTERN_C RuntimeClass* Func_1_t687B04A8AAD2D43E760426531E3BB1C269F9F093_i
 IL2CPP_EXTERN_C RuntimeClass* Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GlobalizationMode_t8C0DD244B8C6347DE7AB7AE83B10911D2EB7582A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ISimpleCollator_t084383013F96378AFFD4540649E086C9C13BFF5B_il2cpp_TypeInfo_var;
@@ -643,6 +646,7 @@ IL2CPP_EXTERN_C RuntimeClass* OperationCanceledException_tC97D0B4532C15E6F0E9F93
 IL2CPP_EXTERN_C RuntimeClass* PathInternal_t40910AF78E21C3A6C83D095423B3EADE9AC5261C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PathTooLongException_tAF7644094546C2BD93B829405B0199BF3B3FC2E5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReadDelegate_tA1467DDB23ACEC2E32F06F86F7906D1B1AA67C98_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RuntimeObject_il2cpp_TypeInfo_var;
@@ -896,6 +900,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_CreateSortKey_m349821496C50E80E
 IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_GetCompareInfo_mA131986F1E3FDC82B3935D2207E83941537F5C6C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_GetHashCodeOfString_m6CAF73F87A15B3C35C33C87C3DB49EA3FDEBAD92_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_IndexOfCore_m046B524A65A687A4123E8C9C0AF9E8417016EED2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_IndexOf_m5369B941572B70C4C3CDC42B98EB4B765489D180_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_IndexOf_m7433BE43D1406C75F02B150AF54541EA14C4DA06_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_InvariantCreateSortKey_mC38E99F237128A0E32CEB01EDB50AF3DC30EF9F0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CompareInfo_IsPrefix_mFA1761BA04C5934BC5AD534852E010AA8406857C_RuntimeMethod_var;
@@ -930,6 +935,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* FileStream_get_Length_m315564C6AB9EE3D3C514
 IL2CPP_EXTERN_C const RuntimeMethod* FileStream_get_Position_m2B5220CEFE803AB1C75B6E2CE249D121A876761A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FileStream_set_Position_m976B6B73848918C63E9CB625EF02938A85D7C03F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* File_ReadAllBytes_mE0C2C5A0270CD40C496E85B1D8BA15C607E7011E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* File_WriteAllText_mE462D8448CA65183AA5D464210706167E0EF19EB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* LazyInitializer_EnsureInitialized_TisManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158_m4C3AB59FA69E7CE0E3CBD9077D255322A625EF06_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* LazyInitializer_EnsureInitialized_TisSemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2_mC927EE2C2BC5AF01A3BAD66B9F7F327895B8D363_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MemoryExtensions_AsSpan_TisChar_t521A6F19B456D956AF452D926C32709DC03D6B17_m894CFA74107DD4DD04EB48B2804777AAC208758A_RuntimeMethod_var;
@@ -996,6 +1002,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* StreamWriter_ThrowAsyncIOInProgress_m15A2C2
 IL2CPP_EXTERN_C const RuntimeMethod* StreamWriter_WriteSpan_m4323CA2DB888C07C38F7BD88641DA7D56489BE66_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StreamWriter_Write_mE02DD312AFCC5AF2794F96FC3A8E521F2587D333_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StreamWriter__ctor_m07CDDF5BC8553960286FA1BFF8BBA2159835EBCC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Stream_BeginReadInternal_m3BE76602E834C0FC41BEB1BD9B2B92A4A24B1A15_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Stream_BeginWriteInternal_mB44541AB192B0B5F1EBFF2F57EBE906E4E5C327F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Stream_EndRead_m62BC30BACB0B2CDE8AE53485F0FE16A12D05CDC4_RuntimeMethod_var;
@@ -1548,6 +1555,17 @@ struct GlobalizationMode_t8C0DD244B8C6347DE7AB7AE83B10911D2EB7582A_StaticFields
 	bool ___U3CInvariantU3Ek__BackingField_0;
 };
 
+// System.Numerics.Hashing.HashHelpers
+struct HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4  : public RuntimeObject
+{
+};
+
+struct HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_StaticFields
+{
+	// System.Int32 System.Numerics.Hashing.HashHelpers::RandomSeed
+	int32_t ___RandomSeed_0;
+};
+
 // Mono.Globalization.Unicode.MSCompatUnicodeTable
 struct MSCompatUnicodeTable_t26E4B9B0E049DBAFAB2189A2DFCEAD9A5893F29E  : public RuntimeObject
 {
@@ -1666,6 +1684,29 @@ struct PathInternal_t40910AF78E21C3A6C83D095423B3EADE9AC5261C_StaticFields
 {
 	// System.Boolean System.IO.PathInternal::s_isCaseSensitive
 	bool ___s_isCaseSensitive_0;
+};
+
+// System.Random
+struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8  : public RuntimeObject
+{
+	// System.Int32 System.Random::_inext
+	int32_t ____inext_0;
+	// System.Int32 System.Random::_inextp
+	int32_t ____inextp_1;
+	// System.Int32[] System.Random::_seedArray
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____seedArray_2;
+};
+
+struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_StaticFields
+{
+	// System.Random System.Random::s_globalRandom
+	Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* ___s_globalRandom_4;
+};
+
+struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_ThreadStaticFields
+{
+	// System.Random System.Random::t_threadRandom
+	Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* ___t_threadRandom_3;
 };
 
 // System.Threading.SemaphoreSlim
@@ -2018,6 +2059,11 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 };
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// System.Numerics.Vector
+struct Vector_t246EF05F1CA5F494FB8B48AB2724DFCD2C2C5A9A  : public RuntimeObject
 {
 };
 
@@ -2386,6 +2432,852 @@ struct OrdinalComparer_tBB06915E213A5D4C8C617ED5478E8BF30C2B2170  : public Strin
 {
 	// System.Boolean System.OrdinalComparer::_ignoreCase
 	bool ____ignoreCase_4;
+};
+
+// System.Numerics.Register
+struct Register_t483055A1DB8634BA3FBF01BB15D4E94E186A2E7A 
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Byte System.Numerics.Register::byte_0
+			uint8_t ___byte_0_0;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint8_t ___byte_0_0_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_1_1_OffsetPadding[1];
+			// System.Byte System.Numerics.Register::byte_1
+			uint8_t ___byte_1_1;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_1_1_OffsetPadding_forAlignmentOnly[1];
+			uint8_t ___byte_1_1_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_2_2_OffsetPadding[2];
+			// System.Byte System.Numerics.Register::byte_2
+			uint8_t ___byte_2_2;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_2_2_OffsetPadding_forAlignmentOnly[2];
+			uint8_t ___byte_2_2_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_3_3_OffsetPadding[3];
+			// System.Byte System.Numerics.Register::byte_3
+			uint8_t ___byte_3_3;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_3_3_OffsetPadding_forAlignmentOnly[3];
+			uint8_t ___byte_3_3_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_4_4_OffsetPadding[4];
+			// System.Byte System.Numerics.Register::byte_4
+			uint8_t ___byte_4_4;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_4_4_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___byte_4_4_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_5_5_OffsetPadding[5];
+			// System.Byte System.Numerics.Register::byte_5
+			uint8_t ___byte_5_5;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_5_5_OffsetPadding_forAlignmentOnly[5];
+			uint8_t ___byte_5_5_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_6_6_OffsetPadding[6];
+			// System.Byte System.Numerics.Register::byte_6
+			uint8_t ___byte_6_6;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_6_6_OffsetPadding_forAlignmentOnly[6];
+			uint8_t ___byte_6_6_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_7_7_OffsetPadding[7];
+			// System.Byte System.Numerics.Register::byte_7
+			uint8_t ___byte_7_7;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_7_7_OffsetPadding_forAlignmentOnly[7];
+			uint8_t ___byte_7_7_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_8_8_OffsetPadding[8];
+			// System.Byte System.Numerics.Register::byte_8
+			uint8_t ___byte_8_8;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_8_8_OffsetPadding_forAlignmentOnly[8];
+			uint8_t ___byte_8_8_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_9_9_OffsetPadding[9];
+			// System.Byte System.Numerics.Register::byte_9
+			uint8_t ___byte_9_9;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_9_9_OffsetPadding_forAlignmentOnly[9];
+			uint8_t ___byte_9_9_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_10_10_OffsetPadding[10];
+			// System.Byte System.Numerics.Register::byte_10
+			uint8_t ___byte_10_10;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_10_10_OffsetPadding_forAlignmentOnly[10];
+			uint8_t ___byte_10_10_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_11_11_OffsetPadding[11];
+			// System.Byte System.Numerics.Register::byte_11
+			uint8_t ___byte_11_11;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_11_11_OffsetPadding_forAlignmentOnly[11];
+			uint8_t ___byte_11_11_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_12_12_OffsetPadding[12];
+			// System.Byte System.Numerics.Register::byte_12
+			uint8_t ___byte_12_12;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_12_12_OffsetPadding_forAlignmentOnly[12];
+			uint8_t ___byte_12_12_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_13_13_OffsetPadding[13];
+			// System.Byte System.Numerics.Register::byte_13
+			uint8_t ___byte_13_13;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_13_13_OffsetPadding_forAlignmentOnly[13];
+			uint8_t ___byte_13_13_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_14_14_OffsetPadding[14];
+			// System.Byte System.Numerics.Register::byte_14
+			uint8_t ___byte_14_14;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_14_14_OffsetPadding_forAlignmentOnly[14];
+			uint8_t ___byte_14_14_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___byte_15_15_OffsetPadding[15];
+			// System.Byte System.Numerics.Register::byte_15
+			uint8_t ___byte_15_15;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___byte_15_15_OffsetPadding_forAlignmentOnly[15];
+			uint8_t ___byte_15_15_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.SByte System.Numerics.Register::sbyte_0
+			int8_t ___sbyte_0_16;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int8_t ___sbyte_0_16_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_1_17_OffsetPadding[1];
+			// System.SByte System.Numerics.Register::sbyte_1
+			int8_t ___sbyte_1_17;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_1_17_OffsetPadding_forAlignmentOnly[1];
+			int8_t ___sbyte_1_17_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_2_18_OffsetPadding[2];
+			// System.SByte System.Numerics.Register::sbyte_2
+			int8_t ___sbyte_2_18;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_2_18_OffsetPadding_forAlignmentOnly[2];
+			int8_t ___sbyte_2_18_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_3_19_OffsetPadding[3];
+			// System.SByte System.Numerics.Register::sbyte_3
+			int8_t ___sbyte_3_19;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_3_19_OffsetPadding_forAlignmentOnly[3];
+			int8_t ___sbyte_3_19_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_4_20_OffsetPadding[4];
+			// System.SByte System.Numerics.Register::sbyte_4
+			int8_t ___sbyte_4_20;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_4_20_OffsetPadding_forAlignmentOnly[4];
+			int8_t ___sbyte_4_20_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_5_21_OffsetPadding[5];
+			// System.SByte System.Numerics.Register::sbyte_5
+			int8_t ___sbyte_5_21;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_5_21_OffsetPadding_forAlignmentOnly[5];
+			int8_t ___sbyte_5_21_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_6_22_OffsetPadding[6];
+			// System.SByte System.Numerics.Register::sbyte_6
+			int8_t ___sbyte_6_22;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_6_22_OffsetPadding_forAlignmentOnly[6];
+			int8_t ___sbyte_6_22_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_7_23_OffsetPadding[7];
+			// System.SByte System.Numerics.Register::sbyte_7
+			int8_t ___sbyte_7_23;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_7_23_OffsetPadding_forAlignmentOnly[7];
+			int8_t ___sbyte_7_23_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_8_24_OffsetPadding[8];
+			// System.SByte System.Numerics.Register::sbyte_8
+			int8_t ___sbyte_8_24;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_8_24_OffsetPadding_forAlignmentOnly[8];
+			int8_t ___sbyte_8_24_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_9_25_OffsetPadding[9];
+			// System.SByte System.Numerics.Register::sbyte_9
+			int8_t ___sbyte_9_25;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_9_25_OffsetPadding_forAlignmentOnly[9];
+			int8_t ___sbyte_9_25_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_10_26_OffsetPadding[10];
+			// System.SByte System.Numerics.Register::sbyte_10
+			int8_t ___sbyte_10_26;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_10_26_OffsetPadding_forAlignmentOnly[10];
+			int8_t ___sbyte_10_26_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_11_27_OffsetPadding[11];
+			// System.SByte System.Numerics.Register::sbyte_11
+			int8_t ___sbyte_11_27;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_11_27_OffsetPadding_forAlignmentOnly[11];
+			int8_t ___sbyte_11_27_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_12_28_OffsetPadding[12];
+			// System.SByte System.Numerics.Register::sbyte_12
+			int8_t ___sbyte_12_28;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_12_28_OffsetPadding_forAlignmentOnly[12];
+			int8_t ___sbyte_12_28_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_13_29_OffsetPadding[13];
+			// System.SByte System.Numerics.Register::sbyte_13
+			int8_t ___sbyte_13_29;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_13_29_OffsetPadding_forAlignmentOnly[13];
+			int8_t ___sbyte_13_29_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_14_30_OffsetPadding[14];
+			// System.SByte System.Numerics.Register::sbyte_14
+			int8_t ___sbyte_14_30;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_14_30_OffsetPadding_forAlignmentOnly[14];
+			int8_t ___sbyte_14_30_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___sbyte_15_31_OffsetPadding[15];
+			// System.SByte System.Numerics.Register::sbyte_15
+			int8_t ___sbyte_15_31;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___sbyte_15_31_OffsetPadding_forAlignmentOnly[15];
+			int8_t ___sbyte_15_31_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.UInt16 System.Numerics.Register::uint16_0
+			uint16_t ___uint16_0_32;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint16_t ___uint16_0_32_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint16_1_33_OffsetPadding[2];
+			// System.UInt16 System.Numerics.Register::uint16_1
+			uint16_t ___uint16_1_33;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint16_1_33_OffsetPadding_forAlignmentOnly[2];
+			uint16_t ___uint16_1_33_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint16_2_34_OffsetPadding[4];
+			// System.UInt16 System.Numerics.Register::uint16_2
+			uint16_t ___uint16_2_34;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint16_2_34_OffsetPadding_forAlignmentOnly[4];
+			uint16_t ___uint16_2_34_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint16_3_35_OffsetPadding[6];
+			// System.UInt16 System.Numerics.Register::uint16_3
+			uint16_t ___uint16_3_35;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint16_3_35_OffsetPadding_forAlignmentOnly[6];
+			uint16_t ___uint16_3_35_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint16_4_36_OffsetPadding[8];
+			// System.UInt16 System.Numerics.Register::uint16_4
+			uint16_t ___uint16_4_36;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint16_4_36_OffsetPadding_forAlignmentOnly[8];
+			uint16_t ___uint16_4_36_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint16_5_37_OffsetPadding[10];
+			// System.UInt16 System.Numerics.Register::uint16_5
+			uint16_t ___uint16_5_37;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint16_5_37_OffsetPadding_forAlignmentOnly[10];
+			uint16_t ___uint16_5_37_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint16_6_38_OffsetPadding[12];
+			// System.UInt16 System.Numerics.Register::uint16_6
+			uint16_t ___uint16_6_38;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint16_6_38_OffsetPadding_forAlignmentOnly[12];
+			uint16_t ___uint16_6_38_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint16_7_39_OffsetPadding[14];
+			// System.UInt16 System.Numerics.Register::uint16_7
+			uint16_t ___uint16_7_39;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint16_7_39_OffsetPadding_forAlignmentOnly[14];
+			uint16_t ___uint16_7_39_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int16 System.Numerics.Register::int16_0
+			int16_t ___int16_0_40;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int16_t ___int16_0_40_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int16_1_41_OffsetPadding[2];
+			// System.Int16 System.Numerics.Register::int16_1
+			int16_t ___int16_1_41;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int16_1_41_OffsetPadding_forAlignmentOnly[2];
+			int16_t ___int16_1_41_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int16_2_42_OffsetPadding[4];
+			// System.Int16 System.Numerics.Register::int16_2
+			int16_t ___int16_2_42;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int16_2_42_OffsetPadding_forAlignmentOnly[4];
+			int16_t ___int16_2_42_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int16_3_43_OffsetPadding[6];
+			// System.Int16 System.Numerics.Register::int16_3
+			int16_t ___int16_3_43;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int16_3_43_OffsetPadding_forAlignmentOnly[6];
+			int16_t ___int16_3_43_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int16_4_44_OffsetPadding[8];
+			// System.Int16 System.Numerics.Register::int16_4
+			int16_t ___int16_4_44;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int16_4_44_OffsetPadding_forAlignmentOnly[8];
+			int16_t ___int16_4_44_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int16_5_45_OffsetPadding[10];
+			// System.Int16 System.Numerics.Register::int16_5
+			int16_t ___int16_5_45;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int16_5_45_OffsetPadding_forAlignmentOnly[10];
+			int16_t ___int16_5_45_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int16_6_46_OffsetPadding[12];
+			// System.Int16 System.Numerics.Register::int16_6
+			int16_t ___int16_6_46;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int16_6_46_OffsetPadding_forAlignmentOnly[12];
+			int16_t ___int16_6_46_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int16_7_47_OffsetPadding[14];
+			// System.Int16 System.Numerics.Register::int16_7
+			int16_t ___int16_7_47;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int16_7_47_OffsetPadding_forAlignmentOnly[14];
+			int16_t ___int16_7_47_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.UInt32 System.Numerics.Register::uint32_0
+			uint32_t ___uint32_0_48;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint32_t ___uint32_0_48_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint32_1_49_OffsetPadding[4];
+			// System.UInt32 System.Numerics.Register::uint32_1
+			uint32_t ___uint32_1_49;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint32_1_49_OffsetPadding_forAlignmentOnly[4];
+			uint32_t ___uint32_1_49_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint32_2_50_OffsetPadding[8];
+			// System.UInt32 System.Numerics.Register::uint32_2
+			uint32_t ___uint32_2_50;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint32_2_50_OffsetPadding_forAlignmentOnly[8];
+			uint32_t ___uint32_2_50_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint32_3_51_OffsetPadding[12];
+			// System.UInt32 System.Numerics.Register::uint32_3
+			uint32_t ___uint32_3_51;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint32_3_51_OffsetPadding_forAlignmentOnly[12];
+			uint32_t ___uint32_3_51_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int32 System.Numerics.Register::int32_0
+			int32_t ___int32_0_52;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___int32_0_52_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int32_1_53_OffsetPadding[4];
+			// System.Int32 System.Numerics.Register::int32_1
+			int32_t ___int32_1_53;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int32_1_53_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___int32_1_53_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int32_2_54_OffsetPadding[8];
+			// System.Int32 System.Numerics.Register::int32_2
+			int32_t ___int32_2_54;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int32_2_54_OffsetPadding_forAlignmentOnly[8];
+			int32_t ___int32_2_54_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int32_3_55_OffsetPadding[12];
+			// System.Int32 System.Numerics.Register::int32_3
+			int32_t ___int32_3_55;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int32_3_55_OffsetPadding_forAlignmentOnly[12];
+			int32_t ___int32_3_55_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.UInt64 System.Numerics.Register::uint64_0
+			uint64_t ___uint64_0_56;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint64_t ___uint64_0_56_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___uint64_1_57_OffsetPadding[8];
+			// System.UInt64 System.Numerics.Register::uint64_1
+			uint64_t ___uint64_1_57;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___uint64_1_57_OffsetPadding_forAlignmentOnly[8];
+			uint64_t ___uint64_1_57_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int64 System.Numerics.Register::int64_0
+			int64_t ___int64_0_58;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int64_t ___int64_0_58_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___int64_1_59_OffsetPadding[8];
+			// System.Int64 System.Numerics.Register::int64_1
+			int64_t ___int64_1_59;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___int64_1_59_OffsetPadding_forAlignmentOnly[8];
+			int64_t ___int64_1_59_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Single System.Numerics.Register::single_0
+			float ___single_0_60;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			float ___single_0_60_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___single_1_61_OffsetPadding[4];
+			// System.Single System.Numerics.Register::single_1
+			float ___single_1_61;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___single_1_61_OffsetPadding_forAlignmentOnly[4];
+			float ___single_1_61_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___single_2_62_OffsetPadding[8];
+			// System.Single System.Numerics.Register::single_2
+			float ___single_2_62;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___single_2_62_OffsetPadding_forAlignmentOnly[8];
+			float ___single_2_62_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___single_3_63_OffsetPadding[12];
+			// System.Single System.Numerics.Register::single_3
+			float ___single_3_63;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___single_3_63_OffsetPadding_forAlignmentOnly[12];
+			float ___single_3_63_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Double System.Numerics.Register::double_0
+			double ___double_0_64;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			double ___double_0_64_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___double_1_65_OffsetPadding[8];
+			// System.Double System.Numerics.Register::double_1
+			double ___double_1_65;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___double_1_65_OffsetPadding_forAlignmentOnly[8];
+			double ___double_1_65_forAlignmentOnly;
+		};
+	};
 };
 
 // System.SByte
@@ -4775,6 +5667,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Span_1__ctor_mC9BE2938B716B4
 // System.Int32 System.Span`1<System.Char>::get_Length()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Span_1_get_Length_mB79622153F80AD55A805C005842AF045F4FCF992_gshared_inline (Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D* __this, const RuntimeMethod* method) ;
 
+// System.Void System.Random::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Random__ctor_m151183BD4F021499A98B9DE8502DAD4B12DD16AC (Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* __this, const RuntimeMethod* method) ;
 // System.Void System.IO.IOException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IOException__ctor_mE0612A16064F93C7EBB468D6874777BD70CB50CA (IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910* __this, String_t* ___message0, const RuntimeMethod* method) ;
 // System.Void System.Exception::set_HResult(System.Int32)
@@ -5019,6 +5913,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C246
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriter__ctor_mD9064D59C0AE19DD6BD8979E3A519963A82EC2A8 (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* __this, RuntimeObject* ___formatProvider0, const RuntimeMethod* method) ;
 // System.Void System.IO.StreamWriter::Init(System.IO.Stream,System.Text.Encoding,System.Int32,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter_Init_m87624EC42F9CD27B6D43829466EFA800002D44D6 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___streamArg0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encodingArg1, int32_t ___bufferSize2, bool ___shouldLeaveOpen3, const RuntimeMethod* method) ;
+// System.Text.Encoding System.IO.StreamWriter::get_UTF8NoBOM()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* StreamWriter_get_UTF8NoBOM_m04C33AF2694B1302AA0CB457FBAC1E9D89E948D2 (const RuntimeMethod* method) ;
+// System.Void System.IO.StreamWriter::.ctor(System.String,System.Boolean,System.Text.Encoding,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, String_t* ___path0, bool ___append1, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding2, int32_t ___bufferSize3, const RuntimeMethod* method) ;
+// System.Void System.IO.TextWriter::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriter__ctor_mCB798AF418D211569751509FEDEEBEA164907C84 (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* __this, const RuntimeMethod* method) ;
 // System.Boolean System.IO.StreamWriter::get_LeaveOpen()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StreamWriter_get_LeaveOpen_m2C4BAC4313AA1DCE27FA332061B29229FA5202C9 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, const RuntimeMethod* method) ;
 // System.Void System.IO.TextWriter::Dispose(System.Boolean)
@@ -5053,8 +5953,6 @@ inline Il2CppChar* MemoryMarshal_GetReference_TisChar_t521A6F19B456D956AF452D926
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_MemoryCopy_mF94BFB19AA8A06BD47F4EA68F95B5A9EBE8E6277 (void* ___source0, void* ___destination1, int64_t ___destinationSizeInBytes2, int64_t ___sourceBytesToCopy3, const RuntimeMethod* method) ;
 // System.ReadOnlySpan`1<System.Char> System.String::op_Implicit(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 String_op_Implicit_m43FB5A30521770D4C28C1307CF89F80BA3535CAC_inline (String_t* ___value0, const RuntimeMethod* method) ;
-// System.Text.Encoding System.IO.StreamWriter::get_UTF8NoBOM()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* StreamWriter_get_UTF8NoBOM_m04C33AF2694B1302AA0CB457FBAC1E9D89E948D2 (const RuntimeMethod* method) ;
 // System.Void System.IO.StreamWriter::.ctor(System.IO.Stream,System.Text.Encoding,System.Int32,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_m07CDDF5BC8553960286FA1BFF8BBA2159835EBCC (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, int32_t ___bufferSize2, bool ___leaveOpen3, const RuntimeMethod* method) ;
 // System.Void System.MarshalByRefObject::.ctor()
@@ -5129,6 +6027,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar String_get_Chars_mC49DF0CD2D3BE7BE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystem_FileExists_m8AB7C6D24D02D160F74AB5ACADDC71FD8A8FF997 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___fullPath0, const RuntimeMethod* method) ;
 // System.Void System.IO.FileStream::.ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileStream__ctor_mA39506EF7A1F33FCA0199B880BE1D82217E33EEC (FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* __this, String_t* ___path0, int32_t ___mode1, int32_t ___access2, int32_t ___share3, const RuntimeMethod* method) ;
+// System.Void System.ArgumentException::.ctor(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, String_t* ___paramName1, const RuntimeMethod* method) ;
+// System.Void System.IO.StreamWriter::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_m7C83908E2616C22FA632EF67E36E137932E534D7 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, String_t* ___path0, const RuntimeMethod* method) ;
 // System.Void System.IO.FileStream::.ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileStream__ctor_m059A8F48B2F463D020113605765EC40F2D54E928 (FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* __this, String_t* ___path0, int32_t ___mode1, int32_t ___access2, int32_t ___share3, int32_t ___bufferSize4, const RuntimeMethod* method) ;
 // System.Byte[] System.IO.File::ReadAllBytesUnknownLength(System.IO.FileStream)
@@ -5396,8 +6298,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryWriter__ctor_m860E1F386330088B80E5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_m73759B51FE326460AC87A0E386480226EF2FABED (intptr_t ___value10, intptr_t ___value21, const RuntimeMethod* method) ;
 // System.String Locale::GetText(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Locale_GetText_mB5E9ECC1E9AAA230D967810285D49F3A0BCD99D6 (String_t* ___msg0, const RuntimeMethod* method) ;
-// System.Void System.ArgumentException::.ctor(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, String_t* ___paramName1, const RuntimeMethod* method) ;
 // System.Void Microsoft.Win32.SafeHandles.SafeFileHandle::.ctor(System.IntPtr,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeFileHandle__ctor_mDF2AFEC596DE2F6BD8FBB977135DAC23703213A2 (SafeFileHandle_t033FA6AAAC65F4BB25F4CBA9A242A58C95CD406E* __this, intptr_t ___preexistingHandle0, bool ___ownsHandle1, const RuntimeMethod* method) ;
 // System.Void System.IO.FileStream::Init(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Boolean,System.Int32,System.Boolean,System.Boolean)
@@ -5887,6 +6787,69 @@ inline int32_t Span_1_get_Length_mB79622153F80AD55A805C005842AF045F4FCF992_inlin
 {
 	return ((  int32_t (*) (Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D*, const RuntimeMethod*))Span_1_get_Length_mB79622153F80AD55A805C005842AF045F4FCF992_gshared_inline)(__this, method);
 }
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Boolean System.Numerics.Vector::get_IsHardwareAccelerated()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Vector_get_IsHardwareAccelerated_m4165001054E20A7304F843AE29C33C47D814185D (const RuntimeMethod* method) 
+{
+	{
+		return (bool)0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 System.Numerics.Hashing.HashHelpers::Combine(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashHelpers_Combine_m556169DF218720DCB13E0712A886E9029C838344 (int32_t ___h10, int32_t ___h21, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___h10;
+		int32_t L_1 = ___h10;
+		int32_t L_2 = ___h10;
+		int32_t L_3 = ___h21;
+		return ((int32_t)(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)(L_0<<5))|((int32_t)((uint32_t)L_1>>((int32_t)27))))), L_2))^L_3));
+	}
+}
+// System.Void System.Numerics.Hashing.HashHelpers::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashHelpers__cctor_m94A732B55434D1C205EFA65DE3951C2776C78D53 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* L_0 = (Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8*)il2cpp_codegen_object_new(Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Random__ctor_m151183BD4F021499A98B9DE8502DAD4B12DD16AC(L_0, NULL);
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = VirtualFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(6 /* System.Int32 System.Random::Next(System.Int32,System.Int32) */, L_0, ((int32_t)-2147483648LL), ((int32_t)2147483647LL));
+		((HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_StaticFields*)il2cpp_codegen_static_fields_for(HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_il2cpp_TypeInfo_var))->___RandomSeed_0 = L_1;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -10251,6 +11214,145 @@ IL_0054:
 		return;
 	}
 }
+// System.Void System.IO.StreamWriter::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_m7C83908E2616C22FA632EF67E36E137932E534D7 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, String_t* ___path0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___path0;
+		il2cpp_codegen_runtime_class_init_inline(StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_il2cpp_TypeInfo_var);
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
+		L_1 = StreamWriter_get_UTF8NoBOM_m04C33AF2694B1302AA0CB457FBAC1E9D89E948D2(NULL);
+		StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797(__this, L_0, (bool)0, L_1, ((int32_t)1024), NULL);
+		return;
+	}
+}
+// System.Void System.IO.StreamWriter::.ctor(System.String,System.Boolean,System.Text.Encoding,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, String_t* ___path0, bool ___append1, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding2, int32_t ___bufferSize3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* V_0 = NULL;
+	String_t* G_B10_0 = NULL;
+	String_t* G_B9_0 = NULL;
+	int32_t G_B11_0 = 0;
+	String_t* G_B11_1 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_0;
+		L_0 = Task_get_CompletedTask_mA35969BCF3240B8BA63918BA0C527F809C477E27_inline(NULL);
+		__this->____asyncWriteTask_17 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____asyncWriteTask_17), (void*)L_0);
+		il2cpp_codegen_runtime_class_init_inline(TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3_il2cpp_TypeInfo_var);
+		TextWriter__ctor_mCB798AF418D211569751509FEDEEBEA164907C84(__this, NULL);
+		String_t* L_1 = ___path0;
+		if (L_1)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_2 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFE79FF373808574898C82AC1320C55C1182FB75A)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797_RuntimeMethod_var)));
+	}
+
+IL_001f:
+	{
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_3 = ___encoding2;
+		if (L_3)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_4 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_4);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral29988D0F9BCADFABFF66CBF5AB73096D1CAE3128)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797_RuntimeMethod_var)));
+	}
+
+IL_002d:
+	{
+		String_t* L_5 = ___path0;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_5, NULL);
+		if (L_6)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_7 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_7);
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE13808A85E2BA41FC42181872C6D1D3D044C2F82)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797_RuntimeMethod_var)));
+	}
+
+IL_0040:
+	{
+		int32_t L_8 = ___bufferSize3;
+		if ((((int32_t)L_8) > ((int32_t)0)))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* L_9 = (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var)));
+		NullCheck(L_9);
+		ArgumentOutOfRangeException__ctor_mE5B2755F0BEA043CACF915D5CE140859EE58FA66(L_9, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralC8FE4FB2F0C7351CCB064A9D9BD65C0FC83D4E12)), ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralC80EAF7D556B35E97D7BD4261C87B1BF066A0221)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_9, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StreamWriter__ctor_m1F86E05C0B270E003570FE854A7B32775F6FD797_RuntimeMethod_var)));
+	}
+
+IL_0055:
+	{
+		String_t* L_10 = ___path0;
+		bool L_11 = ___append1;
+		G_B9_0 = L_10;
+		if (L_11)
+		{
+			G_B10_0 = L_10;
+			goto IL_005c;
+		}
+	}
+	{
+		G_B11_0 = 2;
+		G_B11_1 = G_B9_0;
+		goto IL_005d;
+	}
+
+IL_005c:
+	{
+		G_B11_0 = 6;
+		G_B11_1 = G_B10_0;
+	}
+
+IL_005d:
+	{
+		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_12 = (FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8*)il2cpp_codegen_object_new(FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		FileStream__ctor_mCF0C1E859853B23725D0048DEA0653A759A5E657(L_12, G_B11_1, G_B11_0, 2, 1, ((int32_t)4096), ((int32_t)134217728), NULL);
+		V_0 = L_12;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_13 = V_0;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_14 = ___encoding2;
+		int32_t L_15 = ___bufferSize3;
+		StreamWriter_Init_m87624EC42F9CD27B6D43829466EFA800002D44D6(__this, L_13, L_14, L_15, (bool)0, NULL);
+		return;
+	}
+}
 // System.Void System.IO.StreamWriter::Init(System.IO.Stream,System.Text.Encoding,System.Int32,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter_Init_m87624EC42F9CD27B6D43829466EFA800002D44D6 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___streamArg0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encodingArg1, int32_t ___bufferSize2, bool ___shouldLeaveOpen3, const RuntimeMethod* method) 
 {
@@ -13525,6 +14627,101 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FileStream_t07C7222EE10B75F352B89B76E60820160
 		NullCheck(L_1);
 		FileStream__ctor_mA39506EF7A1F33FCA0199B880BE1D82217E33EEC(L_1, L_0, 3, 1, 1, NULL);
 		return L_1;
+	}
+}
+// System.Void System.IO.File::WriteAllText(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void File_WriteAllText_mE462D8448CA65183AA5D464210706167E0EF19EB (String_t* ___path0, String_t* ___contents1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* V_0 = NULL;
+	{
+		String_t* L_0 = ___path0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_1 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFE79FF373808574898C82AC1320C55C1182FB75A)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&File_WriteAllText_mE462D8448CA65183AA5D464210706167E0EF19EB_RuntimeMethod_var)));
+	}
+
+IL_000e:
+	{
+		String_t* L_2 = ___path0;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_2, NULL);
+		if (L_3)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_4 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_4);
+		ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE13808A85E2BA41FC42181872C6D1D3D044C2F82)), ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFE79FF373808574898C82AC1320C55C1182FB75A)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&File_WriteAllText_mE462D8448CA65183AA5D464210706167E0EF19EB_RuntimeMethod_var)));
+	}
+
+IL_0026:
+	{
+		String_t* L_5 = ___path0;
+		StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_6 = (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4*)il2cpp_codegen_object_new(StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		StreamWriter__ctor_m7C83908E2616C22FA632EF67E36E137932E534D7(L_6, L_5, NULL);
+		V_0 = L_6;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0036:
+			{// begin finally (depth: 1)
+				{
+					StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_7 = V_0;
+					if (!L_7)
+					{
+						goto IL_003f;
+					}
+				}
+				{
+					StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_8 = V_0;
+					NullCheck(L_8);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_8);
+				}
+
+IL_003f:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_9 = V_0;
+			String_t* L_10 = ___contents1;
+			NullCheck(L_9);
+			VirtualActionInvoker1< String_t* >::Invoke(12 /* System.Void System.IO.TextWriter::Write(System.String) */, L_9, L_10);
+			goto IL_0040;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0040:
+	{
+		return;
 	}
 }
 // System.Byte[] System.IO.File::ReadAllBytes(System.String)
@@ -30989,6 +32186,37 @@ IL_0084:
 		return L_26;
 	}
 }
+// System.Int32 System.Globalization.CompareInfo::IndexOf(System.String,System.String,System.Globalization.CompareOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CompareInfo_IndexOf_m5369B941572B70C4C3CDC42B98EB4B765489D180 (CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57* __this, String_t* ___source0, String_t* ___value1, int32_t ___options2, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_1 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral66F9618FDA792CAB23AF2D7FFB50AB2D3E393DC5)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&CompareInfo_IndexOf_m5369B941572B70C4C3CDC42B98EB4B765489D180_RuntimeMethod_var)));
+	}
+
+IL_000e:
+	{
+		String_t* L_2 = ___source0;
+		String_t* L_3 = ___value1;
+		String_t* L_4 = ___source0;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_4, NULL);
+		int32_t L_6 = ___options2;
+		int32_t L_7;
+		L_7 = VirtualFuncInvoker5< int32_t, String_t*, String_t*, int32_t, int32_t, int32_t >::Invoke(12 /* System.Int32 System.Globalization.CompareInfo::IndexOf(System.String,System.String,System.Int32,System.Int32,System.Globalization.CompareOptions) */, __this, L_2, L_3, 0, L_5, L_6);
+		return L_7;
+	}
+}
 // System.Int32 System.Globalization.CompareInfo::IndexOf(System.String,System.String,System.Int32,System.Int32,System.Globalization.CompareOptions)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CompareInfo_IndexOf_m7433BE43D1406C75F02B150AF54541EA14C4DA06 (CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57* __this, String_t* ___source0, String_t* ___value1, int32_t ___startIndex2, int32_t ___count3, int32_t ___options4, const RuntimeMethod* method) 
 {
@@ -32990,7 +34218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CompareInfo_GetHashCodeOfStringCore_m
 		String_t* L_0 = ___source0;
 		int32_t L_1 = ___options1;
 		SortKey_tFE5594FAAAFF330066735114D1021DB0D5273740* L_2;
-		L_2 = VirtualFuncInvoker2< SortKey_tFE5594FAAAFF330066735114D1021DB0D5273740*, String_t*, int32_t >::Invoke(13 /* System.Globalization.SortKey System.Globalization.CompareInfo::GetSortKey(System.String,System.Globalization.CompareOptions) */, __this, L_0, L_1);
+		L_2 = VirtualFuncInvoker2< SortKey_tFE5594FAAAFF330066735114D1021DB0D5273740*, String_t*, int32_t >::Invoke(14 /* System.Globalization.SortKey System.Globalization.CompareInfo::GetSortKey(System.String,System.Globalization.CompareOptions) */, __this, L_0, L_1);
 		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, L_2);

@@ -216,7 +216,7 @@ MonoBehaviour:
   gageSpeed: 3
   minPower: 0
   maxPower: 8
-  spawnTime: 5
+  spawnTime: 3
   angle: 0
 --- !u!1 &8202833569493550191
 GameObject:

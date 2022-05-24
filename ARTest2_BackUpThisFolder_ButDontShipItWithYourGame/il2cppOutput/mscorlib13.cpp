@@ -632,8 +632,6 @@ struct PreserveSigAttribute_tF566EF48053D6795103159EC3D37E271BB30BBA0;
 struct PropertyBuilder_t2942A01F56306FF5B06D3823F4B9B88BC66C0718;
 // System.Reflection.PropertyInfo
 struct PropertyInfo_t;
-// System.Random
-struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8;
 // Internal.Runtime.Augments.ReflectionExecutionDomainCallbacks
 struct ReflectionExecutionDomainCallbacks_t041256B96E629D0A3804BDC58BC3507FA140C1CC;
 // System.Reflection.ReflectionTypeLoadException
@@ -801,7 +799,6 @@ IL2CPP_EXTERN_C RuntimeClass* FieldOffsetAttribute_t353E4C6235A2364EEE6301D38F6B
 IL2CPP_EXTERN_C RuntimeClass* FileLoadException_t7B98CE82B69E1EE2766408D480716802BBA5968B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* FormatterServices_t37D3EFB704B4375FE9A0F532B7DEDE0A43FDF0E2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ICollection_1_t455147333DB7405794C6992C1FAF08FF2319A04D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ICollection_1_t6AC567057CAE6F4A8486B796941077CD64F469EA_il2cpp_TypeInfo_var;
@@ -847,7 +844,6 @@ IL2CPP_EXTERN_C RuntimeClass* Pointer_tF3EB94149753756A3C88C6253C42779C5AB3FA26_
 IL2CPP_EXTERN_C RuntimeClass* PreserveSigAttribute_tF566EF48053D6795103159EC3D37E271BB30BBA0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PropertyInfoU5BU5D_tD81C248B41D0C76207C42DB9C332DC79F490B1D7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PropertyInfo_t_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReadOnlyCollection_1_tD22937E99FBFBC6FD85A9802376E389578922513_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ResolveEventHolder_t3CB1550411277AD1F17B720A3C07C37973A99558_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ResourceEnumerator_t6BAC4B31C7448C9868FB43C5899684520F2DB085_il2cpp_TypeInfo_var;
@@ -1072,6 +1068,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AssemblyName__ctor_mA1FA5566003555823FD3380
 IL2CPP_EXTERN_C const RuntimeMethod* Assembly_GetAssembly_mAD69F1541A0A9B23B3E780B2BEB07872B3CF1857_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assembly_GetCustomAttributes_mF1CC644628924FFB78586EA8875A78D84CB95B78_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assembly_GetExecutingAssembly_m8E9CB357E058EF6975F2991004919D0832B2FFAB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Assembly_GetExportedTypes_m4892408E33A7B02AC6654E5ABD2D9FC4996E051C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assembly_GetModule_m9C9731B8EC83B1D130825CD0A7AD676811C674F4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assembly_GetModulesInternal_m815AAD05DFC8F0801DB28BDF3FE5E68A44F77A1E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Assembly_GetModules_m0266E398272E6387830FB07E7E615E9DF1A0BFE2_RuntimeMethod_var;
@@ -2024,17 +2021,6 @@ struct ExceptionHandlingClause_t9FEDBA314A006A0A836538080D93D15758AA114B_marshal
 	int32_t ___handler_length_6;
 };
 
-// System.Numerics.Hashing.HashHelpers
-struct HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4  : public RuntimeObject
-{
-};
-
-struct HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_StaticFields
-{
-	// System.Int32 System.Numerics.Hashing.HashHelpers::RandomSeed
-	int32_t ___RandomSeed_0;
-};
-
 // System.Collections.Hashtable
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D  : public RuntimeObject
 {
@@ -2218,29 +2204,6 @@ struct Pointer_tF3EB94149753756A3C88C6253C42779C5AB3FA26  : public RuntimeObject
 	void* ____ptr_0;
 	// System.Type System.Reflection.Pointer::_ptrType
 	Type_t* ____ptrType_1;
-};
-
-// System.Random
-struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8  : public RuntimeObject
-{
-	// System.Int32 System.Random::_inext
-	int32_t ____inext_0;
-	// System.Int32 System.Random::_inextp
-	int32_t ____inextp_1;
-	// System.Int32[] System.Random::_seedArray
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____seedArray_2;
-};
-
-struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_StaticFields
-{
-	// System.Random System.Random::s_globalRandom
-	Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* ___s_globalRandom_4;
-};
-
-struct Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_ThreadStaticFields
-{
-	// System.Random System.Random::t_threadRandom
-	Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* ___t_threadRandom_3;
 };
 
 // Internal.Runtime.Augments.ReflectionExecutionDomainCallbacks
@@ -2470,11 +2433,6 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 };
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
-{
-};
-
-// System.Numerics.Vector
-struct Vector_t246EF05F1CA5F494FB8B48AB2724DFCD2C2C5A9A  : public RuntimeObject
 {
 };
 
@@ -3136,852 +3094,6 @@ struct PreserveSigAttribute_tF566EF48053D6795103159EC3D37E271BB30BBA0  : public 
 // System.Reflection.PropertyInfo
 struct PropertyInfo_t  : public MemberInfo_t
 {
-};
-
-// System.Numerics.Register
-struct Register_t483055A1DB8634BA3FBF01BB15D4E94E186A2E7A 
-{
-	union
-	{
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Byte System.Numerics.Register::byte_0
-			uint8_t ___byte_0_0;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			uint8_t ___byte_0_0_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_1_1_OffsetPadding[1];
-			// System.Byte System.Numerics.Register::byte_1
-			uint8_t ___byte_1_1;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_1_1_OffsetPadding_forAlignmentOnly[1];
-			uint8_t ___byte_1_1_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_2_2_OffsetPadding[2];
-			// System.Byte System.Numerics.Register::byte_2
-			uint8_t ___byte_2_2;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_2_2_OffsetPadding_forAlignmentOnly[2];
-			uint8_t ___byte_2_2_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_3_3_OffsetPadding[3];
-			// System.Byte System.Numerics.Register::byte_3
-			uint8_t ___byte_3_3;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_3_3_OffsetPadding_forAlignmentOnly[3];
-			uint8_t ___byte_3_3_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_4_4_OffsetPadding[4];
-			// System.Byte System.Numerics.Register::byte_4
-			uint8_t ___byte_4_4;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_4_4_OffsetPadding_forAlignmentOnly[4];
-			uint8_t ___byte_4_4_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_5_5_OffsetPadding[5];
-			// System.Byte System.Numerics.Register::byte_5
-			uint8_t ___byte_5_5;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_5_5_OffsetPadding_forAlignmentOnly[5];
-			uint8_t ___byte_5_5_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_6_6_OffsetPadding[6];
-			// System.Byte System.Numerics.Register::byte_6
-			uint8_t ___byte_6_6;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_6_6_OffsetPadding_forAlignmentOnly[6];
-			uint8_t ___byte_6_6_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_7_7_OffsetPadding[7];
-			// System.Byte System.Numerics.Register::byte_7
-			uint8_t ___byte_7_7;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_7_7_OffsetPadding_forAlignmentOnly[7];
-			uint8_t ___byte_7_7_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_8_8_OffsetPadding[8];
-			// System.Byte System.Numerics.Register::byte_8
-			uint8_t ___byte_8_8;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_8_8_OffsetPadding_forAlignmentOnly[8];
-			uint8_t ___byte_8_8_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_9_9_OffsetPadding[9];
-			// System.Byte System.Numerics.Register::byte_9
-			uint8_t ___byte_9_9;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_9_9_OffsetPadding_forAlignmentOnly[9];
-			uint8_t ___byte_9_9_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_10_10_OffsetPadding[10];
-			// System.Byte System.Numerics.Register::byte_10
-			uint8_t ___byte_10_10;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_10_10_OffsetPadding_forAlignmentOnly[10];
-			uint8_t ___byte_10_10_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_11_11_OffsetPadding[11];
-			// System.Byte System.Numerics.Register::byte_11
-			uint8_t ___byte_11_11;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_11_11_OffsetPadding_forAlignmentOnly[11];
-			uint8_t ___byte_11_11_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_12_12_OffsetPadding[12];
-			// System.Byte System.Numerics.Register::byte_12
-			uint8_t ___byte_12_12;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_12_12_OffsetPadding_forAlignmentOnly[12];
-			uint8_t ___byte_12_12_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_13_13_OffsetPadding[13];
-			// System.Byte System.Numerics.Register::byte_13
-			uint8_t ___byte_13_13;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_13_13_OffsetPadding_forAlignmentOnly[13];
-			uint8_t ___byte_13_13_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_14_14_OffsetPadding[14];
-			// System.Byte System.Numerics.Register::byte_14
-			uint8_t ___byte_14_14;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_14_14_OffsetPadding_forAlignmentOnly[14];
-			uint8_t ___byte_14_14_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___byte_15_15_OffsetPadding[15];
-			// System.Byte System.Numerics.Register::byte_15
-			uint8_t ___byte_15_15;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___byte_15_15_OffsetPadding_forAlignmentOnly[15];
-			uint8_t ___byte_15_15_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.SByte System.Numerics.Register::sbyte_0
-			int8_t ___sbyte_0_16;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int8_t ___sbyte_0_16_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_1_17_OffsetPadding[1];
-			// System.SByte System.Numerics.Register::sbyte_1
-			int8_t ___sbyte_1_17;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_1_17_OffsetPadding_forAlignmentOnly[1];
-			int8_t ___sbyte_1_17_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_2_18_OffsetPadding[2];
-			// System.SByte System.Numerics.Register::sbyte_2
-			int8_t ___sbyte_2_18;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_2_18_OffsetPadding_forAlignmentOnly[2];
-			int8_t ___sbyte_2_18_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_3_19_OffsetPadding[3];
-			// System.SByte System.Numerics.Register::sbyte_3
-			int8_t ___sbyte_3_19;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_3_19_OffsetPadding_forAlignmentOnly[3];
-			int8_t ___sbyte_3_19_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_4_20_OffsetPadding[4];
-			// System.SByte System.Numerics.Register::sbyte_4
-			int8_t ___sbyte_4_20;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_4_20_OffsetPadding_forAlignmentOnly[4];
-			int8_t ___sbyte_4_20_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_5_21_OffsetPadding[5];
-			// System.SByte System.Numerics.Register::sbyte_5
-			int8_t ___sbyte_5_21;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_5_21_OffsetPadding_forAlignmentOnly[5];
-			int8_t ___sbyte_5_21_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_6_22_OffsetPadding[6];
-			// System.SByte System.Numerics.Register::sbyte_6
-			int8_t ___sbyte_6_22;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_6_22_OffsetPadding_forAlignmentOnly[6];
-			int8_t ___sbyte_6_22_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_7_23_OffsetPadding[7];
-			// System.SByte System.Numerics.Register::sbyte_7
-			int8_t ___sbyte_7_23;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_7_23_OffsetPadding_forAlignmentOnly[7];
-			int8_t ___sbyte_7_23_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_8_24_OffsetPadding[8];
-			// System.SByte System.Numerics.Register::sbyte_8
-			int8_t ___sbyte_8_24;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_8_24_OffsetPadding_forAlignmentOnly[8];
-			int8_t ___sbyte_8_24_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_9_25_OffsetPadding[9];
-			// System.SByte System.Numerics.Register::sbyte_9
-			int8_t ___sbyte_9_25;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_9_25_OffsetPadding_forAlignmentOnly[9];
-			int8_t ___sbyte_9_25_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_10_26_OffsetPadding[10];
-			// System.SByte System.Numerics.Register::sbyte_10
-			int8_t ___sbyte_10_26;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_10_26_OffsetPadding_forAlignmentOnly[10];
-			int8_t ___sbyte_10_26_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_11_27_OffsetPadding[11];
-			// System.SByte System.Numerics.Register::sbyte_11
-			int8_t ___sbyte_11_27;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_11_27_OffsetPadding_forAlignmentOnly[11];
-			int8_t ___sbyte_11_27_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_12_28_OffsetPadding[12];
-			// System.SByte System.Numerics.Register::sbyte_12
-			int8_t ___sbyte_12_28;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_12_28_OffsetPadding_forAlignmentOnly[12];
-			int8_t ___sbyte_12_28_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_13_29_OffsetPadding[13];
-			// System.SByte System.Numerics.Register::sbyte_13
-			int8_t ___sbyte_13_29;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_13_29_OffsetPadding_forAlignmentOnly[13];
-			int8_t ___sbyte_13_29_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_14_30_OffsetPadding[14];
-			// System.SByte System.Numerics.Register::sbyte_14
-			int8_t ___sbyte_14_30;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_14_30_OffsetPadding_forAlignmentOnly[14];
-			int8_t ___sbyte_14_30_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___sbyte_15_31_OffsetPadding[15];
-			// System.SByte System.Numerics.Register::sbyte_15
-			int8_t ___sbyte_15_31;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___sbyte_15_31_OffsetPadding_forAlignmentOnly[15];
-			int8_t ___sbyte_15_31_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.UInt16 System.Numerics.Register::uint16_0
-			uint16_t ___uint16_0_32;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			uint16_t ___uint16_0_32_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint16_1_33_OffsetPadding[2];
-			// System.UInt16 System.Numerics.Register::uint16_1
-			uint16_t ___uint16_1_33;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint16_1_33_OffsetPadding_forAlignmentOnly[2];
-			uint16_t ___uint16_1_33_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint16_2_34_OffsetPadding[4];
-			// System.UInt16 System.Numerics.Register::uint16_2
-			uint16_t ___uint16_2_34;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint16_2_34_OffsetPadding_forAlignmentOnly[4];
-			uint16_t ___uint16_2_34_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint16_3_35_OffsetPadding[6];
-			// System.UInt16 System.Numerics.Register::uint16_3
-			uint16_t ___uint16_3_35;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint16_3_35_OffsetPadding_forAlignmentOnly[6];
-			uint16_t ___uint16_3_35_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint16_4_36_OffsetPadding[8];
-			// System.UInt16 System.Numerics.Register::uint16_4
-			uint16_t ___uint16_4_36;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint16_4_36_OffsetPadding_forAlignmentOnly[8];
-			uint16_t ___uint16_4_36_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint16_5_37_OffsetPadding[10];
-			// System.UInt16 System.Numerics.Register::uint16_5
-			uint16_t ___uint16_5_37;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint16_5_37_OffsetPadding_forAlignmentOnly[10];
-			uint16_t ___uint16_5_37_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint16_6_38_OffsetPadding[12];
-			// System.UInt16 System.Numerics.Register::uint16_6
-			uint16_t ___uint16_6_38;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint16_6_38_OffsetPadding_forAlignmentOnly[12];
-			uint16_t ___uint16_6_38_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint16_7_39_OffsetPadding[14];
-			// System.UInt16 System.Numerics.Register::uint16_7
-			uint16_t ___uint16_7_39;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint16_7_39_OffsetPadding_forAlignmentOnly[14];
-			uint16_t ___uint16_7_39_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Int16 System.Numerics.Register::int16_0
-			int16_t ___int16_0_40;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int16_t ___int16_0_40_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int16_1_41_OffsetPadding[2];
-			// System.Int16 System.Numerics.Register::int16_1
-			int16_t ___int16_1_41;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int16_1_41_OffsetPadding_forAlignmentOnly[2];
-			int16_t ___int16_1_41_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int16_2_42_OffsetPadding[4];
-			// System.Int16 System.Numerics.Register::int16_2
-			int16_t ___int16_2_42;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int16_2_42_OffsetPadding_forAlignmentOnly[4];
-			int16_t ___int16_2_42_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int16_3_43_OffsetPadding[6];
-			// System.Int16 System.Numerics.Register::int16_3
-			int16_t ___int16_3_43;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int16_3_43_OffsetPadding_forAlignmentOnly[6];
-			int16_t ___int16_3_43_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int16_4_44_OffsetPadding[8];
-			// System.Int16 System.Numerics.Register::int16_4
-			int16_t ___int16_4_44;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int16_4_44_OffsetPadding_forAlignmentOnly[8];
-			int16_t ___int16_4_44_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int16_5_45_OffsetPadding[10];
-			// System.Int16 System.Numerics.Register::int16_5
-			int16_t ___int16_5_45;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int16_5_45_OffsetPadding_forAlignmentOnly[10];
-			int16_t ___int16_5_45_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int16_6_46_OffsetPadding[12];
-			// System.Int16 System.Numerics.Register::int16_6
-			int16_t ___int16_6_46;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int16_6_46_OffsetPadding_forAlignmentOnly[12];
-			int16_t ___int16_6_46_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int16_7_47_OffsetPadding[14];
-			// System.Int16 System.Numerics.Register::int16_7
-			int16_t ___int16_7_47;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int16_7_47_OffsetPadding_forAlignmentOnly[14];
-			int16_t ___int16_7_47_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.UInt32 System.Numerics.Register::uint32_0
-			uint32_t ___uint32_0_48;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			uint32_t ___uint32_0_48_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint32_1_49_OffsetPadding[4];
-			// System.UInt32 System.Numerics.Register::uint32_1
-			uint32_t ___uint32_1_49;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint32_1_49_OffsetPadding_forAlignmentOnly[4];
-			uint32_t ___uint32_1_49_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint32_2_50_OffsetPadding[8];
-			// System.UInt32 System.Numerics.Register::uint32_2
-			uint32_t ___uint32_2_50;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint32_2_50_OffsetPadding_forAlignmentOnly[8];
-			uint32_t ___uint32_2_50_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint32_3_51_OffsetPadding[12];
-			// System.UInt32 System.Numerics.Register::uint32_3
-			uint32_t ___uint32_3_51;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint32_3_51_OffsetPadding_forAlignmentOnly[12];
-			uint32_t ___uint32_3_51_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Int32 System.Numerics.Register::int32_0
-			int32_t ___int32_0_52;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int32_t ___int32_0_52_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int32_1_53_OffsetPadding[4];
-			// System.Int32 System.Numerics.Register::int32_1
-			int32_t ___int32_1_53;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int32_1_53_OffsetPadding_forAlignmentOnly[4];
-			int32_t ___int32_1_53_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int32_2_54_OffsetPadding[8];
-			// System.Int32 System.Numerics.Register::int32_2
-			int32_t ___int32_2_54;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int32_2_54_OffsetPadding_forAlignmentOnly[8];
-			int32_t ___int32_2_54_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int32_3_55_OffsetPadding[12];
-			// System.Int32 System.Numerics.Register::int32_3
-			int32_t ___int32_3_55;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int32_3_55_OffsetPadding_forAlignmentOnly[12];
-			int32_t ___int32_3_55_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.UInt64 System.Numerics.Register::uint64_0
-			uint64_t ___uint64_0_56;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			uint64_t ___uint64_0_56_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___uint64_1_57_OffsetPadding[8];
-			// System.UInt64 System.Numerics.Register::uint64_1
-			uint64_t ___uint64_1_57;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___uint64_1_57_OffsetPadding_forAlignmentOnly[8];
-			uint64_t ___uint64_1_57_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Int64 System.Numerics.Register::int64_0
-			int64_t ___int64_0_58;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int64_t ___int64_0_58_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___int64_1_59_OffsetPadding[8];
-			// System.Int64 System.Numerics.Register::int64_1
-			int64_t ___int64_1_59;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___int64_1_59_OffsetPadding_forAlignmentOnly[8];
-			int64_t ___int64_1_59_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Single System.Numerics.Register::single_0
-			float ___single_0_60;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			float ___single_0_60_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___single_1_61_OffsetPadding[4];
-			// System.Single System.Numerics.Register::single_1
-			float ___single_1_61;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___single_1_61_OffsetPadding_forAlignmentOnly[4];
-			float ___single_1_61_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___single_2_62_OffsetPadding[8];
-			// System.Single System.Numerics.Register::single_2
-			float ___single_2_62;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___single_2_62_OffsetPadding_forAlignmentOnly[8];
-			float ___single_2_62_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___single_3_63_OffsetPadding[12];
-			// System.Single System.Numerics.Register::single_3
-			float ___single_3_63;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___single_3_63_OffsetPadding_forAlignmentOnly[12];
-			float ___single_3_63_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Double System.Numerics.Register::double_0
-			double ___double_0_64;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			double ___double_0_64_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___double_1_65_OffsetPadding[8];
-			// System.Double System.Numerics.Register::double_1
-			double ___double_1_65;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___double_1_65_OffsetPadding_forAlignmentOnly[8];
-			double ___double_1_65_forAlignmentOnly;
-		};
-	};
 };
 
 // System.Resources.ResourceLocator
@@ -6983,8 +6095,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyInfo__ctor_m09B380762225589F785B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SerializationInfo_GetBoolean_m8335F8E11B572AB6B5BF85A9355D6888D5847EF5 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, const RuntimeMethod* method) ;
 // System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_mC52253CB19C98F82A26E32C941F8F20E106D4C0D (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, bool ___value1, const RuntimeMethod* method) ;
-// System.Void System.Random::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Random__ctor_m151183BD4F021499A98B9DE8502DAD4B12DD16AC (Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* __this, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -20529,7 +19639,7 @@ IL_0041:
 		String_t* L_12 = V_0;
 		NullCheck(L_11);
 		Type_t* L_13;
-		L_13 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(19 /* System.Type System.Reflection.Assembly::GetType(System.String,System.Boolean,System.Boolean) */, L_11, L_12, (bool)1, (bool)0);
+		L_13 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(20 /* System.Type System.Reflection.Assembly::GetType(System.String,System.Boolean,System.Boolean) */, L_11, L_12, (bool)1, (bool)0);
 		__this->___m_reflectedType_1 = ((RuntimeType_tB1A69257E7A00D07AB0CABD8D5BA7D83E0DC9EC1*)IsInstClass((RuntimeObject*)L_13, RuntimeType_tB1A69257E7A00D07AB0CABD8D5BA7D83E0DC9EC1_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_reflectedType_1), (void*)((RuntimeType_tB1A69257E7A00D07AB0CABD8D5BA7D83E0DC9EC1*)IsInstClass((RuntimeObject*)L_13, RuntimeType_tB1A69257E7A00D07AB0CABD8D5BA7D83E0DC9EC1_il2cpp_TypeInfo_var)));
 		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_14 = ___info0;
@@ -21522,13 +20632,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B
 		return L_0;
 	}
 }
+// System.Type[] System.Reflection.Assembly::GetExportedTypes()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* Assembly_GetExportedTypes_m4892408E33A7B02AC6654E5ABD2D9FC4996E051C (Assembly_t* __this, const RuntimeMethod* method) 
+{
+	{
+		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_0 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Assembly_GetExportedTypes_m4892408E33A7B02AC6654E5ABD2D9FC4996E051C_RuntimeMethod_var)));
+	}
+}
 // System.Type System.Reflection.Assembly::GetType(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Assembly_GetType_m14088CA59080AFA0F58D6AC78021C71438235051 (Assembly_t* __this, String_t* ___name0, const RuntimeMethod* method) 
 {
 	{
 		String_t* L_0 = ___name0;
 		Type_t* L_1;
-		L_1 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(19 /* System.Type System.Reflection.Assembly::GetType(System.String,System.Boolean,System.Boolean) */, __this, L_0, (bool)0, (bool)0);
+		L_1 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(20 /* System.Type System.Reflection.Assembly::GetType(System.String,System.Boolean,System.Boolean) */, __this, L_0, (bool)0, (bool)0);
 		return L_1;
 	}
 }
@@ -21554,7 +20674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AssemblyName_t555F1570F523D87D970C6E7F27B1B44
 {
 	{
 		AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2* L_0;
-		L_0 = VirtualFuncInvoker1< AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2*, bool >::Invoke(16 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName(System.Boolean) */, __this, (bool)0);
+		L_0 = VirtualFuncInvoker1< AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2*, bool >::Invoke(17 /* System.Reflection.AssemblyName System.Reflection.Assembly::GetName(System.Boolean) */, __this, (bool)0);
 		return L_0;
 	}
 }
@@ -21785,6 +20905,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7
 		Exception_t* L_0;
 		L_0 = Assembly_CreateNIE_m40AE287E272DBB8CC539652B9409B9537F1172AB(NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Assembly_GetModules_m0266E398272E6387830FB07E7E615E9DF1A0BFE2_RuntimeMethod_var)));
+	}
+}
+// System.Boolean System.Reflection.Assembly::get_IsDynamic()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Assembly_get_IsDynamic_m897AD1964133D645791D329AE1008C5DF7073EA5 (Assembly_t* __this, const RuntimeMethod* method) 
+{
+	{
+		return (bool)0;
 	}
 }
 // System.Boolean System.Reflection.Assembly::op_Equality(System.Reflection.Assembly,System.Reflection.Assembly)
@@ -24804,7 +23931,7 @@ IL_000e:
 IL_0021:
 	{
 		ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7319EF87FE* L_5;
-		L_5 = VirtualFuncInvoker1< ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7319EF87FE*, bool >::Invoke(21 /* System.Reflection.Module[] System.Reflection.Assembly::GetModules(System.Boolean) */, __this, (bool)1);
+		L_5 = VirtualFuncInvoker1< ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7319EF87FE*, bool >::Invoke(22 /* System.Reflection.Module[] System.Reflection.Assembly::GetModules(System.Boolean) */, __this, (bool)1);
 		V_0 = L_5;
 		V_1 = 0;
 		goto IL_0045;
@@ -24874,7 +24001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7
 	Module_tABB9217F7F2BA3E0F4277D03C2B234A7313BB8D0* V_4 = NULL;
 	{
 		ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7319EF87FE* L_0;
-		L_0 = VirtualFuncInvoker0< ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7319EF87FE* >::Invoke(18 /* System.Reflection.Module[] System.Reflection.Assembly::GetModulesInternal() */, __this);
+		L_0 = VirtualFuncInvoker0< ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7319EF87FE* >::Invoke(19 /* System.Reflection.Module[] System.Reflection.Assembly::GetModulesInternal() */, __this);
 		V_0 = L_0;
 		bool L_1 = ___getResourceModules0;
 		if (L_1)
@@ -24947,6 +24074,15 @@ IL_0040:
 	{
 		ModuleU5BU5D_t7E2A615EDA0BE9DB02BE6763CF017E7319EF87FE* L_18 = V_0;
 		return L_18;
+	}
+}
+// System.Type[] System.Reflection.RuntimeAssembly::GetExportedTypes()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* RuntimeAssembly_GetExportedTypes_mEC39732D53E5584DBFBBAE4EF285C60C117513B8 (RuntimeAssembly_tA26A4DE82E77826DFC3D58AD976BCFC6BCA918AF* __this, const RuntimeMethod* method) 
+{
+	{
+		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_0;
+		L_0 = VirtualFuncInvoker1< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB*, bool >::Invoke(13 /* System.Type[] System.Reflection.Assembly::GetTypes(System.Boolean) */, __this, (bool)1);
+		return L_0;
 	}
 }
 // System.Byte[] System.Reflection.RuntimeAssembly::GetAotId()
@@ -32977,69 +32113,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double ConstantHelper_GetDoubleWithAllBitsSet
 		*((int64_t*)((uintptr_t)(&V_0))) = (int64_t)((int64_t)(-1));
 		double L_0 = V_0;
 		return L_0;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Boolean System.Numerics.Vector::get_IsHardwareAccelerated()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Vector_get_IsHardwareAccelerated_m4165001054E20A7304F843AE29C33C47D814185D (const RuntimeMethod* method) 
-{
-	{
-		return (bool)0;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Int32 System.Numerics.Hashing.HashHelpers::Combine(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HashHelpers_Combine_m556169DF218720DCB13E0712A886E9029C838344 (int32_t ___h10, int32_t ___h21, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = ___h10;
-		int32_t L_1 = ___h10;
-		int32_t L_2 = ___h10;
-		int32_t L_3 = ___h21;
-		return ((int32_t)(((int32_t)il2cpp_codegen_add(((int32_t)(((int32_t)(L_0<<5))|((int32_t)((uint32_t)L_1>>((int32_t)27))))), L_2))^L_3));
-	}
-}
-// System.Void System.Numerics.Hashing.HashHelpers::.cctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashHelpers__cctor_m94A732B55434D1C205EFA65DE3951C2776C78D53 (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8* L_0 = (Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8*)il2cpp_codegen_object_new(Random_t79716069EDE67D1D7734F60AE402D0CA3FB6B4C8_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		Random__ctor_m151183BD4F021499A98B9DE8502DAD4B12DD16AC(L_0, NULL);
-		NullCheck(L_0);
-		int32_t L_1;
-		L_1 = VirtualFuncInvoker2< int32_t, int32_t, int32_t >::Invoke(6 /* System.Int32 System.Random::Next(System.Int32,System.Int32) */, L_0, ((int32_t)-2147483648LL), ((int32_t)2147483647LL));
-		((HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_StaticFields*)il2cpp_codegen_static_fields_for(HashHelpers_t285C6E63B4A4E8D837BDBC63DE4E2D23C85467D4_il2cpp_TypeInfo_var))->___RandomSeed_0 = L_1;
-		return;
 	}
 }
 #ifdef __clang__

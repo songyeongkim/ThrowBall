@@ -250,7 +250,9 @@ IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_i
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral5BBE996AA8C5E1F4775FBDF5736FABA6AF5936AD;
 IL2CPP_EXTERN_C String_t* _stringLiteral8A45D0D8311C8D73121FDD6C8B401E1AD3C58E0E;
+IL2CPP_EXTERN_C String_t* _stringLiteral9896CF2D7C613ACB3A316A171215AE9A8A786E45;
 IL2CPP_EXTERN_C String_t* _stringLiteralA964BCE0950EDAB83C3E9022D2EBB561011536AC;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_get_trackables_m05EA665E785FD12BBFEB6DF9C2208B4222217CF7_RuntimeMethod_var;
@@ -2864,6 +2866,10 @@ inline int32_t List_1_get_Count_m947657E2F650AF1E5068D44835812D75F0487EB7_inline
 }
 // System.Boolean UnityEngine.GameObject::get_activeInHierarchy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeInHierarchy_m49250F4F168DCC5388D5BE4F6A5681386907B109 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Application::get_isEditor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isEditor_m0377DB707B566C8E21DA3CD99963210F6D57D234 (const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Application::get_isMobilePlatform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isMobilePlatform_mBFFD8F419C7FB2FF99C84497C135007BFB5F8B53 (const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mD921B23F47F5347996C56DC789D1DE16EE27D9B1_inline (float ___value0, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::Normalize(UnityEngine.Vector3)
@@ -3952,10 +3958,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlacementIndicator_Update_mCC16B34A0C521
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m6B5722DD0A8C0D3D4A1656C5A5E8D0A784DC85B9_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m947657E2F650AF1E5068D44835812D75F0487EB7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m443F0D48247776D4257E06597AF794BCF6D8020F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t0754071572EFE7A5C92A59495D2524FC935364E3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5BBE996AA8C5E1F4775FBDF5736FABA6AF5936AD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9896CF2D7C613ACB3A316A171215AE9A8A786E45);
 		s_Il2CppMethodInitialized = true;
 	}
 	List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* V_0 = NULL;
@@ -4035,6 +4044,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlacementIndicator_Update_mCC16B34A0C521
 	}
 
 IL_008a:
+	{
+		// if (Application.isEditor)
+		bool L_22;
+		L_22 = Application_get_isEditor_m0377DB707B566C8E21DA3CD99963210F6D57D234(NULL);
+		if (!L_22)
+		{
+			goto IL_009b;
+		}
+	}
+	{
+		// Debug.Log("editorMode");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral5BBE996AA8C5E1F4775FBDF5736FABA6AF5936AD, NULL);
+	}
+
+IL_009b:
+	{
+		// if (Application.isMobilePlatform)
+		bool L_23;
+		L_23 = Application_get_isMobilePlatform_mBFFD8F419C7FB2FF99C84497C135007BFB5F8B53(NULL);
+		if (!L_23)
+		{
+			goto IL_00ac;
+		}
+	}
+	{
+		// Debug.Log("mobileMode");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral9896CF2D7C613ACB3A316A171215AE9A8A786E45, NULL);
+	}
+
+IL_00ac:
 	{
 		// }
 		return;
