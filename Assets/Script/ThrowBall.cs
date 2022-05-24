@@ -5,47 +5,57 @@ using UnityEngine.UI;
 
 public class ThrowBall : MonoBehaviour
 {
+    public StaticBallPos ballPos;
+
     public RectTransform powerGage;
-    public float throwPower = 0;
-    public float gageSpeed;
-    public float powerPlusSpeed;
     public RectTransform arrow;
-    public Camera arCamera;
 
     public Transform frontPos;
     public Transform backPos;
 
+    public float gageSpeed;
+    public float minPower;
+    public float maxPower;
+    public float spawnTime;
+
+    private Camera arCamera;
+    private float gagePower = 0;
     private Vector3 firstPos;
     private Vector3 touchPos;
-    private float angle;
+    public float angle;
+    private Vector3 dir;
+    private float throwPower;
+    private float time = 0;
+    private bool spawnWait = false;
 
-
-
-    //오래 누르고 있으면 게이지 변화 (power)
-    //잡아서 뒤쪽으로 끌어야 공 던지는 준비 (dir)
-    //뒤쪽으로 끈 채로 방향 전환 (rotation)
-    //위쪽으로 드래그 - 뗄 시 공 던지기
 
     private void Start()
     {
         firstPos = transform.position;
+        arCamera = Camera.main;
+        powerGage = ballPos.powerGage;
+        arrow = ballPos.arrow;
     }
 
     private void OnMouseDrag()
     {
         touchPos = Input.mousePosition;
+        arrow.gameObject.SetActive(true);
 
-        //던지는 힘 0~1
+        //던지는 힘
         float distance = (frontPos.position - transform.position).magnitude;
         float fullPower = (frontPos.position - backPos.position).magnitude;
-        throwPower = distance / fullPower * gageSpeed;
-        if (throwPower > 1)
-            throwPower = 1;
-        powerGage.localScale = new Vector3(1,throwPower,1);
-
+        gagePower = distance / fullPower;
+        if (gagePower > 1)
+            gagePower = 1;
+        powerGage.localScale = new Vector3(1,gagePower,1);
 
         //던지는 방향
         angle = Mathf.Atan2(touchPos.y - arrow.position.y, touchPos.x - arrow.position.x) * Mathf.Rad2Deg;
+        if (angle > -60)
+            angle = -60;
+        if (angle < -120)
+            angle = -120;
         arrow.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
         transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
 
@@ -54,7 +64,35 @@ public class ThrowBall : MonoBehaviour
 
         //공 끌어당기기
         if (Input.mousePosition.y < arCamera.WorldToScreenPoint(transform.position).y)
-            transform.localPosition = Vector3.Lerp(transform.localPosition, backPos.position, Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, backPos.position, Time.deltaTime * gageSpeed);
+    }
+
+    private void OnMouseUp()
+    {
+        arrow.gameObject.SetActive(false);
+
+        //던지는 처리
+        dir = Quaternion.AngleAxis(angle + 90, Vector3.forward) * (frontPos.position - backPos.position).normalized;
+        throwPower = GameManager.Remap(gagePower, 0, 1, minPower, maxPower);
+
+        Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
+        rigidbody.useGravity = true;
+        rigidbody.AddForce(dir * throwPower, ForceMode.Impulse);
+
+        spawnWait = true;
+    }
+
+    private void Update()
+    {
+        if(spawnWait)
+        {
+            time += Time.deltaTime;
+            if(time > spawnTime)
+            {
+                GameManager.Instance.SetBall();
+                Destroy(gameObject);
+            }
+        }
     }
 
 }

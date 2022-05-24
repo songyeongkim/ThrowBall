@@ -73,11 +73,12 @@ public class PlaceOnPlane : MonoBehaviour
             if (spawnedObject == null)
             {
                 spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
+                GameManager.Instance.SetBall();
 
             }
             else
             {
-                //spawnedObject.transform.position = hitPose.position;
+
             }
             placementUpdate.Invoke();
         }
