@@ -382,12 +382,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: IngameDebugConsole
       objectReference: {fileID: 0}
+    - target: {fileID: 22400762, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22426080, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22428984, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
@@ -448,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 22457152, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -678,6 +686,7 @@ MonoBehaviour:
   powerGage: {fileID: 1387746998}
   arrow: {fileID: 366093904}
   ball: {fileID: 8202833568396215804, guid: 136d695149ee84ddba940ffd6efb67c2, type: 3}
+  arPlacing: 1
 --- !u!4 &435270644
 Transform:
   m_ObjectHideFlags: 0
@@ -691,7 +700,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &471932077
 GameObject:
@@ -949,8 +958,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1138782630}
-        m_TargetAssemblyTypeName: PlaneDetectionToggle, Assembly-CSharp
-        m_MethodName: TogglePlaneDetection
+        m_TargetAssemblyTypeName: PlaneSettingManager, Assembly-CSharp
+        m_MethodName: ResetGoalPos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1063,7 +1072,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1138782621
 GameObject:
@@ -1082,7 +1091,6 @@ GameObject:
   - component: {fileID: 1138782622}
   - component: {fileID: 1138782630}
   - component: {fileID: 1138782629}
-  - component: {fileID: 1138782631}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -1197,7 +1205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1278d861684c94a2781f73f7eab02819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlacedPrefab: {fileID: 1782702501690864755, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
+  m_PlacedPrefab: {fileID: 4922073610596829419, guid: 944f86629e69e4b45ac42a719f0b1d95, type: 3}
   visualObject: {fileID: 8297056787822451137}
 --- !u!114 &1138782630
 MonoBehaviour:
@@ -1211,23 +1219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceba9c36f888345898d26453c03f151e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggleButtonText: {fileID: 155098494}
---- !u!114 &1138782631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138782621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73a025b51106444e18fb408fde19ac53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutomaticPlacement: 1
-  m_EnvironmentTextureFilterMode: 2
-  m_EnvironmentTextureHDR: 1
-  m_DebugPrefab: {fileID: 0}
 --- !u!1 &1187252248
 GameObject:
   m_ObjectHideFlags: 0

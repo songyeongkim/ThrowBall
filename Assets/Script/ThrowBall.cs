@@ -20,7 +20,6 @@ public class ThrowBall : MonoBehaviour
 
     private Camera arCamera;
     private float gagePower = 0;
-    private Vector3 firstPos;
     private Vector3 touchPos;
     public float angle;
     private Vector3 dir;
@@ -31,7 +30,6 @@ public class ThrowBall : MonoBehaviour
 
     private void Start()
     {
-        firstPos = transform.position;
         arCamera = Camera.main;
         powerGage = ballPos.powerGage;
         arrow = ballPos.arrow;
@@ -45,7 +43,7 @@ public class ThrowBall : MonoBehaviour
         //던지는 힘
         float distance = (frontPos.position - transform.position).magnitude;
         float fullPower = (frontPos.position - backPos.position).magnitude;
-        gagePower = distance / fullPower;
+        gagePower += gageSpeed * Time.deltaTime;
         if (gagePower > 1)
             gagePower = 1;
         powerGage.localScale = new Vector3(1,gagePower,1);
@@ -58,9 +56,6 @@ public class ThrowBall : MonoBehaviour
             angle = -120;
         arrow.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
         transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-
-        Debug.Log(arCamera.WorldToScreenPoint(firstPos).y);
-        Debug.Log(Input.mousePosition.y);
 
         //공 끌어당기기
         if (Input.mousePosition.y < arCamera.WorldToScreenPoint(transform.position).y)
@@ -78,6 +73,9 @@ public class ThrowBall : MonoBehaviour
         Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
         rigidbody.useGravity = true;
         rigidbody.AddForce(dir * throwPower, ForceMode.Impulse);
+
+        gagePower = 0;
+        powerGage.localScale = new Vector3(1, gagePower, 1);
 
         spawnWait = true;
     }

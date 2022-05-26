@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3154682114997515955}
   - component: {fileID: 1758819897702730324}
   - component: {fileID: 5499340755202241424}
-  - component: {fileID: 7509528012172583880}
   - component: {fileID: 6656081305922234950}
   - component: {fileID: 8819706641900413649}
   m_Layer: 0
@@ -63,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d180956a54db4646a1c6342921672ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackingStateVisibilityThreshold: 1
+  m_TrackingStateVisibilityThreshold: 0
   m_HideSubsumed: 1
 --- !u!64 &5499340755202241424
 MeshCollider:
@@ -79,14 +78,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!33 &7509528012172583880
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5419546691012541998}
-  m_Mesh: {fileID: 0}
 --- !u!23 &6656081305922234950
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94,9 +85,9 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5419546691012541998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -107,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f1a110d32af21aa4d872c707dfcc6043, type: 2}
+  - {fileID: 2100000, guid: 9ee2d30a428d7bf41bfe4bdb4e6e659b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,7 +140,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ee2d30a428d7bf41bfe4bdb4e6e659b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,7 +208,7 @@ LineRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 0
+      m_Mode: 1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 4

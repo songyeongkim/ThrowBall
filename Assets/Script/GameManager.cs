@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public RectTransform powerGage;
     public RectTransform arrow;
     public GameObject ball;
+    public bool arPlacing = true;
+
+    private GameObject settedBall;
 
     private void Awake()
     {
@@ -22,10 +25,26 @@ public class GameManager : MonoBehaviour
 
     public void SetBall()
     {
-        GameObject Ball = Instantiate(ball, arCamera.gameObject.transform);
+        settedBall = Instantiate(ball, arCamera.gameObject.transform);
         powerUI.SetActive(true);
-        Ball.GetComponent<StaticBallPos>().powerGage = powerGage;
-        Ball.GetComponent<StaticBallPos>().arrow = arrow; 
+        settedBall.GetComponent<StaticBallPos>().powerGage = powerGage;
+        settedBall.GetComponent<StaticBallPos>().arrow = arrow; 
+    }
+
+    public void DeleteBall()
+    {
+        powerUI.SetActive(false);
+
+        //Ball.GetComponent<StaticBallPos>().powerGage = powerGage;
+        settedBall.GetComponent<StaticBallPos>().arrow.gameObject.SetActive(false);
+        Destroy(settedBall);
+    }
+
+
+
+    public void Goal()
+    {
+        Debug.Log("Goal!!");
     }
 
     public static float Remap(float val, float in1, float in2, float out1, float out2)

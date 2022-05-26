@@ -20,8 +20,7 @@ public class PlaceOnPlane : MonoBehaviour
 
     UnityEvent placementUpdate;
 
-    [SerializeField]
-    GameObject visualObject;
+    public GameObject visualObject;
 
     /// <summary>
     /// The prefab to instantiate on touch.
@@ -37,9 +36,12 @@ public class PlaceOnPlane : MonoBehaviour
     /// </summary>
     public GameObject spawnedObject { get; private set; }
 
+    private PlaneSettingManager planeSettingManager;
+
     void Awake()
     {
         m_RaycastManager = GetComponent<ARRaycastManager>();
+        planeSettingManager = GetComponent<PlaneSettingManager>();
 
         if (placementUpdate == null)
             placementUpdate = new UnityEvent();
@@ -70,24 +72,28 @@ public class PlaceOnPlane : MonoBehaviour
         if (!TryGetTouchPosition(out Vector2 touchPosition))
             return;
 
-        if (m_RaycastManager.Raycast(touchPosition, s_Hits, TrackableType.PlaneWithinPolygon))
+        if(GameManager.Instance.arPlacing && !Application.isEditor)
         {
-            // Raycast hits are sorted by distance, so the first one
-            // will be the closest hit.
-            var hitPose = s_Hits[0].pose;
-
-            if (spawnedObject == null && !Application.isEditor)
+            if (m_RaycastManager.Raycast(touchPosition, s_Hits, TrackableType.PlaneWithinPolygon))
             {
-                spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
-                GameManager.Instance.SetBall();
+                // Raycast hits are sorted by distance, so the first one
+                // will be the closest hit.
+                var hitPose = s_Hits[0].pose;
 
+                if (spawnedObject == null)
+                {
+                    spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
+                    GameManager.Instance.SetBall();
+                    planeSettingManager.SetAllPlanesActive(false);
+                    GameManager.Instance.arPlacing = false;
+                }
+                placementUpdate.Invoke();
             }
-            placementUpdate.Invoke();
         }
 
         if (spawnedObject == null && Application.isEditor && Input.GetMouseButtonDown(0))
         {
-            Debug.Log(touchPosition);
+            Debug.Log("mobile");
             spawnedObject = Instantiate(m_PlacedPrefab, visualObject.transform.position, m_PlacedPrefab.transform.rotation);
             GameManager.Instance.SetBall();
             placementUpdate.Invoke();
